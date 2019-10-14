@@ -72,6 +72,10 @@ test( 'Scripts added to package.json which already has other tests', async () =>
 	expect( get( pkg, 'scripts.test' ) ).toBe( 'npm run -s test:axe && npm run -s lint' );
 } );
 
+/*
+
+TODO: Speed up these tests.
+
 test( 'Installs the wp-theme-auditor dependency', async () => {
 	const filepath = tempWrite.sync( JSON.stringify( {} ), 'package.json' );
 	await createWpThemeAuditor( {
@@ -89,3 +93,5 @@ test( 'Installs the wp-theme-auditor dependency via yarn if there\'s a lockfile'
 	} );
 	expect( fs.readFileSync( yarnLock, 'utf8' ) ).toMatch( /wp-theme-auditor/ );
 } );
+
+*/
