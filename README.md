@@ -8,6 +8,10 @@ Add [wp-theme-auditor](https://github.com/wpaccessibility/wp-theme-auditor) to y
 npm init wp-theme-auditor
 ```
 
-## Credits
+## Contributors
+
+- [@greatislander](https://github.com/greatislander)
+
+## Acknowledgements
 
 Based on [create-xo](https://github.com/xojs/create-xo).
