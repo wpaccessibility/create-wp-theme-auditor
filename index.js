@@ -83,7 +83,7 @@ module.exports = async ( options = {} ) => {
 
 	if ( hasYarn( packageCwd ) ) {
 		try {
-			await execa( 'yarn', [ 'add', '--dev', '--ignore-workspace-root-check', 'wpaccessibility/wp-theme-auditor' ], { cwd: packageCwd } );
+			await execa( 'yarn', [ 'add', '--dev', '--ignore-workspace-root-check', 'wp-theme-auditor' ], { cwd: packageCwd } );
 
 			if ( ! options.quiet ) {
 				depsSpinner.succeed();
@@ -102,7 +102,7 @@ module.exports = async ( options = {} ) => {
 		return;
 	}
 
-	await execa( 'npm', [ 'install', '--save-dev', 'wpaccessibility/wp-theme-auditor' ], { cwd: packageCwd } );
+	await execa( 'npm', [ 'install', '--save-dev', 'wp-theme-auditor' ], { cwd: packageCwd } );
 
 	if ( ! options.quiet ) {
 		depsSpinner.succeed();
