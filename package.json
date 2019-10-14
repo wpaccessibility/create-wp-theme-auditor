@@ -17,6 +17,19 @@
     "npm-init"
   ],
   "homepage": "https://github.com/wpaccessibility/create-wp-theme-auditor#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:js"
+    ],
+    "package.json": [
+      "npm run lint:pkg-json"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wpaccessibility/create-wp-theme-auditor.git"
@@ -42,6 +55,8 @@
     "@wordpress/babel-preset-default": "^4.6.1",
     "@wordpress/scripts": "^5.0.1",
     "dot-prop": "^5.1.0",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
     "temp-write": "^4.0.0"
   },
   "scripts": {
