@@ -1,6 +1,6 @@
 {
   "name": "create-wp-theme-auditor",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Add wp-theme-auditor to your project.",
   "author": {
     "name": "Ned Zimmerman",
