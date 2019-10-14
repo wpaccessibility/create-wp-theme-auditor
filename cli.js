@@ -2,4 +2,6 @@
 'use strict';
 const createWpThemeAuditor = require( '.' );
 
-createWpThemeAuditor();
+createWpThemeAuditor( {
+	args: process.argv.slice( 2 ),
+} );
