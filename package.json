@@ -12,6 +12,7 @@
     "accessibility",
     "axe",
     "wordpress",
+    "wp-theme-auditor",
     "nodejs",
     "npm-package",
     "npm-init"
