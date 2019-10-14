@@ -1,0 +1,43 @@
+{
+  "name": "create-wp-theme-auditor",
+  "version": "0.1.0",
+  "description": "Add wp-theme-auditor to your project.",
+  "author": {
+    "name": "Ned Zimmerman",
+    "email": "ned@bight.ca",
+    "url": "https://bight.ca"
+  },
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "accessibility",
+    "axe",
+    "wordpress",
+    "nodejs",
+    "npm-package",
+    "npm-init"
+  ],
+  "homepage": "https://github.com/wpaccessibility/create-wp-theme-auditor#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpaccessibility/create-wp-theme-auditor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wpaccessibility/create-wp-theme-auditor/issues"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "@wordpress/scripts": "^5.0.1"
+  },
+  "scripts": {
+    "lint:js": "wp-scripts lint-js .",
+    "lint:pkg-json": "wp-scripts lint-pkg-json .",
+    "test": "npm run lint:js && npm run lint:pkg-json"
+  },
+  "dependencies": {
+    "execa": "^3.0.0",
+    "has-yarn": "^2.1.0",
+    "path-exists": "^4.0.0",
+    "read-pkg-up": "^7.0.0",
+    "write-pkg": "^4.0.0"
+  }
+}
