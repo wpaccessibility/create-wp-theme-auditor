@@ -33,6 +33,7 @@
     "lint:pkg-json": "wp-scripts lint-pkg-json .",
     "test": "npm run lint:js && npm run lint:pkg-json"
   },
+  "bin": "cli.js",
   "dependencies": {
     "execa": "^3.0.0",
     "has-yarn": "^2.1.0",
